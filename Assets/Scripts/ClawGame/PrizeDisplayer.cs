@@ -197,7 +197,10 @@ public class PrizeDisplayer : MonoBehaviour
         prize.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         prize.GetComponent<CircleCollider2D>().enabled = false;
         capsuleSprite = prize.GetComponent<SpriteRenderer>();
-        capsuleSprite.sortingOrder = 5;
+        capsuleSprite.sortingLayerName = "FG";
+        capsuleSprite.sortingOrder = 1;
+        winBGSprite.sortingLayerName = "FG";
+        winBGSprite.sortingOrder = 2;
 
         //Set transition values
         displayRotation = setDisplayRotation(prize);

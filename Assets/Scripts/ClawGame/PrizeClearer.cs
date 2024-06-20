@@ -20,7 +20,7 @@ public class PrizeClearer : MonoBehaviour
         if (leave) {
             if (moveAccel < 1)
             {
-                moveAccel += 0.2f;
+                moveAccel += 0.02f;
             }
 
             transform.position = new Vector2(transform.position.x, transform.position.y - (moveSpeed * moveAccel));
