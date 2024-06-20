@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Prize
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: FG
     uniqueID: 3596174991
+    locked: 0
+  - name: UI
+    uniqueID: 415244591
     locked: 0

@@ -62,7 +62,9 @@
     <Compile Include="Assets\Scripts\ParticleSim\Circle.cs" />
     <Compile Include="Assets\Scripts\ParticleSim\ThingDrawer.cs" />
     <Compile Include="Assets\Scripts\ClawGame\CapsuleSpawner.cs" />
+    <Compile Include="Assets\Scripts\ClawGame\PrizeDetector.cs" />
     <Compile Include="Assets\Scripts\Defs.cs" />
+    <Compile Include="Assets\Scripts\ClawGame\PrizeDisplayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

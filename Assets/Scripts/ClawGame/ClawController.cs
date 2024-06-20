@@ -8,6 +8,7 @@ public class ClawController : MonoBehaviour
     [Header("Claw Parts")]
     [SerializeField] private GameObject clawL;
     [SerializeField] private GameObject clawR;
+    [SerializeField] private PrizeDetector prizeDetector;
   
     private bool moving = true;                               // State determining idle movement or action
 
@@ -15,13 +16,17 @@ public class ClawController : MonoBehaviour
     [SerializeField] private float horizontalSpeed;           // Speed the claw moves left and right
     private float horizontalAccel = 1;                        // Controls direction the claw moves
     [SerializeField] private float horizontalAccelIncrement;  // How fast the claw changes direction
-    [SerializeField] private float horizontalBoundary;        // The point at which the claw changes direction
     private bool midMove = true;                              // State for if the claw is moving or changing direction
 
     [SerializeField] private float verticalSpeed;             // Speed the claw moves up and down
     private float verticalAccel = 1;                          // Controls direction the claw moves
     [SerializeField] private float verticalAccelIncrement;    // How fast the claw changes direction
-    [SerializeField] private float verticalBoundary;          // Point at which the claw changes direction
+
+    [Header("Boundaries")]
+    [SerializeField] private float rightBound;                // Right edge of the claw's movement
+    [SerializeField] private float leftBound;                 // Left edge of the claw's movement
+    [SerializeField] private float topBound;                  // Top edge of the claw's movement
+    [SerializeField] private float bottomBound;               // Bottom edge of the claw's movement
 
     [Header("Claw Grip Properties")]
     [SerializeField] private float clawSpeed;                 // Speed the claw's grips close
@@ -53,7 +58,7 @@ public class ClawController : MonoBehaviour
                 move(true);
 
                 //Check if needs to change direction
-                if (transform.position.x > horizontalBoundary || transform.position.x < -horizontalBoundary)
+                if (transform.position.x > rightBound || transform.position.x < leftBound)
                 {
                     midMove = false;
                     side = (horizontalAccel > 0) ? 1 : -1;
@@ -100,7 +105,7 @@ public class ClawController : MonoBehaviour
                 case 2: //Move down
                     move(false);
 
-                    if (transform.position.y < verticalBoundary)
+                    if (transform.position.y < bottomBound)
                     {
                         dropSequence++;
                         side = -1;
@@ -135,7 +140,7 @@ public class ClawController : MonoBehaviour
                 case 6: //Move claw up
                     move(false);
                     //Gonna have to mess with this value here
-                    if (transform.position.y >= 3.6) {
+                    if (transform.position.y >= topBound) {
                         dropSequence++;
                         side = 1;
                     }
@@ -145,6 +150,7 @@ public class ClawController : MonoBehaviour
                     if (stopMovement(false, ref verticalAccel, ref verticalAccelIncrement))
                     {
                         dropSequence = -1;
+                        prizeDetector.checkForPrizes();
                         StartCoroutine(Defs.delay(0.5f, () =>
                         {
                             moving = true;
@@ -161,6 +167,7 @@ public class ClawController : MonoBehaviour
         }
     }
 
+    //Stop movement smoothly
     private bool stopMovement(bool horizontal, ref float accel, ref float accelIncrement)
     {
         if (accel * side > 0) {
@@ -173,6 +180,7 @@ public class ClawController : MonoBehaviour
         return false;
     }
 
+    //Start movement smoothly
     private bool startMovement(bool horizontal, ref float accel, ref float accelIncrement)
     {
         if (accel * side > -1) {
@@ -199,7 +207,9 @@ public class ClawController : MonoBehaviour
 
     private bool closeClaw()
     {
+        //Check rotation
         if (clawRotation < clawClosePos) {
+            //Change rotation
             clawRotation += clawSpeed;
             clawL.transform.rotation = Quaternion.Euler(new Vector3(0, 0, clawRotation));
             clawR.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -clawRotation));
@@ -212,11 +222,13 @@ public class ClawController : MonoBehaviour
 
     private bool openClaw()
     {
+        //Check rotation
         if (clawRotation > clawOpenPos)
         {
+            //Change rotation
             clawRotation -= clawSpeed;
-            clawL.transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, clawRotation));
-            clawR.transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, -clawRotation));
+            clawL.transform.rotation = Quaternion.Euler(new Vector3(0, 0, clawRotation));
+            clawR.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -clawRotation));
         }
         else
         {
