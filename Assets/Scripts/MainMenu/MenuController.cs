@@ -87,7 +87,7 @@ public class MenuController : MonoBehaviour
             SceneManager.LoadScene("ClawGame", LoadSceneMode.Single);
             break;
         case 2:
-            //go to gone fishin scene
+            SceneManager.LoadScene("FishingGame", LoadSceneMode.Single);
             break;
         default:
             Debug.Log("Error: Unknown Game ID");

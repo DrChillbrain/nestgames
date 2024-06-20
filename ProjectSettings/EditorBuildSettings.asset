@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ParticleSim.unity
     guid: ce2cdc1c5f067d84bb6ea2b9eeb4f4ba
+  - enabled: 1
+    path: Assets/Scenes/FishingGame.unity
+    guid: 1b176e2dd64edae45b305033bceba957
   m_configObjects: {}
