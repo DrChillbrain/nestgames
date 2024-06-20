@@ -151,16 +151,22 @@ public class ClawController : MonoBehaviour
                     {
                         dropSequence = -1;
                         prizeDetector.checkForPrizes();
-                        StartCoroutine(Defs.delay(0.5f, () =>
+                    }
+                    break;
+
+                case 8: //Open claw
+                    if (openClaw())
+                    {
+                        dropSequence = -1;
+                        StartCoroutine(Defs.delay(0.2f, () =>
                         {
                             moving = true;
                             midMove = false;
-                            side = 1;
+                            side = (transform.position.x > rightBound + leftBound / 2) ? 1 : -1;
                             horizontalAccel = 0;
                         }));
                     }
                     break;
-
                 default: //Nothing
                     break;
             }
@@ -236,5 +242,10 @@ public class ClawController : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void prizeSequenceOver()
+    {
+        dropSequence = 8;
     }
 }

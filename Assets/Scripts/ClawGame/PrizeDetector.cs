@@ -7,6 +7,7 @@ public class PrizeDetector : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D trigger;
     [SerializeField] private PrizeDisplayer prizeDisplayer;
+    [SerializeField] private ClawController claw;
 
     // Checks for if prizes are within crane's grip
     public void checkForPrizes()
@@ -14,7 +15,12 @@ public class PrizeDetector : MonoBehaviour
         trigger.enabled = true;
         StartCoroutine(Defs.delay(0.1f, () =>
         {
-            trigger.enabled = false;
+            //No prize found
+            if (trigger.enabled)
+            {
+                claw.prizeSequenceOver();
+                trigger.enabled = false;
+            }
         }));
     }
 

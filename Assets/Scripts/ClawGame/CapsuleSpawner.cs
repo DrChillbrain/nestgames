@@ -13,33 +13,41 @@ public class CapsuleSpawner : MonoBehaviour
     [SerializeField] private float xMax;
     [SerializeField] private float yMin;
     [SerializeField] private float yMax;
-    [SerializeField] private int spawnCenter;
-    [SerializeField] private int spawnVariance;
+
+    //[SerializeField] private int spawnCenter;
+    //[SerializeField] private int spawnVariance;
 
     // Start is called before the first frame update
     void Start()
     {
-        int spawnAmount = Random.Range(spawnCenter - spawnVariance, spawnCenter + spawnVariance + 1);
+        //int spawnAmount = Random.Range(spawnCenter - spawnVariance, spawnCenter + spawnVariance + 1);
 
         //Make sure at least one of each animal spawns
-        for (int i = 0; i < prizes.Length; i++)
-        {
-            spawnCapsule(i);
-        }
+        spawnCapsules(0);
 
+        /*
         //Other random prizes
         for (int i = 0; i < spawnAmount; i++)
         {
             spawnCapsule(Random.Range(0, prizes.Length));
         }
+        */
     }
 
-    private void spawnCapsule(int prizeIndex)
+    public void spawnCapsules(int yOffset)
+    {
+        for (int i = 0; i < prizes.Length; i++)
+        {
+            spawnCapsule(i, yOffset);
+        }
+    }
+
+    private void spawnCapsule(int prizeIndex, int yOffset)
     {
         float xPos = Random.Range(xMin, xMax);
         float yPos = Random.Range(yMin, yMax);
 
-        GameObject current = Instantiate(capsule, new Vector2(xPos, yPos), Quaternion.identity);
+        GameObject current = Instantiate(capsule, new Vector2(xPos, yPos + yOffset), Quaternion.identity);
         current.GetComponent<SpriteRenderer>().sprite = prizes[prizeIndex];
     }
 }

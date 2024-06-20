@@ -113,8 +113,8 @@ TextureImporter:
       name: prizes_0
       rect:
         serializedVersion: 2
-        x: 117
-        y: 84
+        x: 110
+        y: 81
         width: 209
         height: 261
       alignment: 0
@@ -134,8 +134,8 @@ TextureImporter:
       name: prizes_1
       rect:
         serializedVersion: 2
-        x: 350
-        y: 84
+        x: 347
+        y: 80
         width: 209
         height: 261
       alignment: 0
@@ -156,7 +156,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 579
-        y: 84
+        y: 82
         width: 209
         height: 261
       alignment: 0
@@ -176,8 +176,8 @@ TextureImporter:
       name: prizes_3
       rect:
         serializedVersion: 2
-        x: 831
-        y: 84
+        x: 824
+        y: 74
         width: 209
         height: 261
       alignment: 0
@@ -197,8 +197,8 @@ TextureImporter:
       name: prizes_4
       rect:
         serializedVersion: 2
-        x: 1086
-        y: 84
+        x: 1085
+        y: 92
         width: 209
         height: 261
       alignment: 0
