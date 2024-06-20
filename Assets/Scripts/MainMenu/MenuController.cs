@@ -6,14 +6,46 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField] private SqueezeControl squeezeControl;
     //Vector3 positions for each of the 3 places the arrow can be
     [SerializeField] private Vector3 squeezeColorPosition;
     [SerializeField] private Vector3 craneGamePosition;
     [SerializeField] private Vector3 goneFishinPosition;
     //tracks which game is currently selected.
     private int selectedGame;
+    //tracks the number of frames it's been since a squeeze started
+    public int squeezeFrames = 0;
     void Start() {
         moveArrow(0);
+    }
+    void Update() {
+        if (Input.GetKey("space") && squeezeControl.squeezeControl == true) {
+            if (squeezeFrames <= 0) {
+                //show squeeze timer bar
+                squeezeFrames = 1;
+            } else {
+                squeezeFrames++;
+            }
+        } else {
+            //this happens when a squeeze is released
+            if (squeezeFrames > 0) {
+                if (squeezeFrames >= 180) {
+                    squeezeFrames = 0;
+                    selectGame();
+                } else {
+                    squeezeFrames = 0;
+                    nextGame();
+                }
+            }
+        }
+    }
+
+    public void nextGame() {
+        if (selectedGame < 2) {
+            moveArrow(selectedGame + 1);
+        } else {
+            moveArrow(0);
+        }
     }
 
     public void moveArrow(int id) {
