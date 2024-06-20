@@ -64,9 +64,12 @@
     <Compile Include="Assets\Scripts\ParticleSim\ThingDrawer.cs" />
     <Compile Include="Assets\Scripts\ClawGame\PrizeClearer.cs" />
     <Compile Include="Assets\Scripts\ClawGame\CapsuleSpawner.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\ProgressBar.cs" />
     <Compile Include="Assets\Scripts\ClawGame\PrizeDetector.cs" />
+    <Compile Include="Assets\Scripts\AnalogueInput.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MenuButton.cs" />
     <Compile Include="Assets\Scripts\Defs.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\SqueezeControl.cs" />
     <Compile Include="Assets\Scripts\ClawGame\PrizeDisplayer.cs" />
     <Compile Include="Assets\Scripts\ClawGame\WinBGAnimation.cs" />
   </ItemGroup>
