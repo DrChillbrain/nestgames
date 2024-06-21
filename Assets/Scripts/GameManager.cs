@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,7 +24,6 @@ public class GameManager : MonoBehaviour
         if (scene.name != "MainMenu") {
             //Set timer values
             GameObject.Find("Timer").SendMessage("setTime", time);
-            Debug.Log("Check");
         } else {
 
         }
@@ -31,6 +31,6 @@ public class GameManager : MonoBehaviour
 
     public void endGame()
     {
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        SceneManager.LoadScene("MainMenu");
     }
 }

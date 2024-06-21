@@ -20,7 +20,7 @@ public class MenuController : MonoBehaviour
     void Start() {
         moveArrow(0);
     }
-    void Update() {
+    void FixedUpdate() {
         if (Input.GetKey("space") && squeezeControl.squeezeControl == true) {
             if (squeezeFrames <= 0) {
                 //show squeeze timer bar
@@ -81,13 +81,13 @@ public class MenuController : MonoBehaviour
         {
         //if you change the name of a scene, change it here too
         case 0:
-            SceneManager.LoadScene("ParticleSim", LoadSceneMode.Single);
+            SceneManager.LoadScene("ParticleSim");
             break;
         case 1:
-            SceneManager.LoadScene("ClawGame", LoadSceneMode.Single);
+            SceneManager.LoadScene("ClawGame");
             break;
         case 2:
-            SceneManager.LoadScene("FishingGame", LoadSceneMode.Single);
+            SceneManager.LoadScene("FishingGame");
             break;
         default:
             Debug.Log("Error: Unknown Game ID");

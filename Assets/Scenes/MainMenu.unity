@@ -1391,7 +1391,7 @@ GameObject:
   - component: {fileID: 1862255686}
   - component: {fileID: 1862255688}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: MenuController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1481,7 +1481,7 @@ MonoBehaviour:
   squeezeColorPosition: {x: -6.01, y: 0.82, z: 0}
   craneGamePosition: {x: 0.02, y: 1.99, z: 0}
   goneFishinPosition: {x: 5.95, y: 1.24, z: 0}
-  frameThreshold: 500
+  frameThreshold: 50
   squeezeFrames: 0
 --- !u!1 &1935131383
 GameObject:
