@@ -91,7 +91,7 @@ public class MenuController : MonoBehaviour
             break;
         default:
             Debug.Log("Error: Unknown Game ID");
-            break;
+            return;
         }
     }
 }

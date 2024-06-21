@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\analogueinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\analogueinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\clawgame\\capsulespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\gametimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gametimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\buttoncommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttoncommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\mainmenu\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\clawgame\\winbganimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\winbganimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\clawgame\\capsulespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\capsulespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\analogueinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\analogueinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\clawgame\\prizedisplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\prizedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\clawgame\\winbganimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\winbganimation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\clawgame\\clawcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\clawcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,11 +54,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ButtonCommands.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ButtonCommands.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonCommands.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ButtonCommands.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ButtonCommands.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:16:44.159Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAEwBkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:12:22.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAAAFMAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:05:56.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameTimer.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\GameTimer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameTimer.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\GameTimer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameTimer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T08:09:59.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AnalogueInput.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\AnalogueInput.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AnalogueInput.cs",
@@ -50,12 +115,11 @@
               "RelativeToolTip": "Assets\\Scripts\\AnalogueInput.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T14:04:17.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T14:04:17.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "PrizeClearer.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\PrizeClearer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\PrizeClearer.cs",
@@ -67,20 +131,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CapsuleSpawner.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\CapsuleSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\CapsuleSpawner.cs",
               "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\CapsuleSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\ClawGame\\CapsuleSpawner.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBkAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T12:35:28.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T12:35:28.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "WinBGAnimation.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\WinBGAnimation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\WinBGAnimation.cs",
@@ -92,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "PrizeDisplayer.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\PrizeDisplayer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\PrizeDisplayer.cs",
@@ -104,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "PrizeDetector.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\PrizeDetector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\PrizeDetector.cs",
@@ -116,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "ClawController.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\ClawController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\ClawController.cs",
