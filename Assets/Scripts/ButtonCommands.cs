@@ -10,6 +10,11 @@ public class ButtonCommands : ScriptableObject
         GameManager.ptr.endGame();
     }
 
+    public void quitGame()
+    {
+        Application.Quit();
+    }
+
     public void calibrateAnalogueControl()
     {
         //Calibrate control

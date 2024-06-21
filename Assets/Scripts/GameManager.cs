@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         if (scene.name != "MainMenu") {
             //Set timer values
             GameObject.Find("Timer").SendMessage("setTime", time);
+            Debug.Log("Check");
         } else {
 
         }
