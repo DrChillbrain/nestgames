@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\MainMenu\SqueezeControl.cs" />
     <Compile Include="Assets\Scripts\ButtonCommands.cs" />
     <Compile Include="Assets\Scripts\ClawGame\PrizeDisplayer.cs" />
+    <Compile Include="Assets\Scripts\FishingGame\GoalAreaController.cs" />
     <Compile Include="Assets\Scripts\ClawGame\WinBGAnimation.cs" />
     <Compile Include="Assets\Scripts\GameTimer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
