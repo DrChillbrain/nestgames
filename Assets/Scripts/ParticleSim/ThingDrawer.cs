@@ -32,7 +32,7 @@ public class ThingDrawer : MonoBehaviour
     void Update()
     {
         //if a squeeze is being registered
-        if (Input.GetKey("space")) {
+        if (AnalogueInput.getValue() > 0.5f) {
             //if this is the first frame of the squeeze
             if (!isSqueezing) {
                 randomizeCoordinates();

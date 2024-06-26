@@ -76,7 +76,7 @@ public class ClawController : MonoBehaviour
             }
 
             //User input
-            if (Input.GetKey(KeyCode.Space))
+            if (AnalogueInput.getValue() > 0.5f)
             {
                 moving = false;
                 dropSequence = 0;

@@ -10,6 +10,7 @@ using UnityEngine.InputSystem.Layouts;
 
 public class ControllerReader : MonoBehaviour {
 
+  [SerializeField] private bool debugMode;
   [SerializeField] public int dataLength;
   [SerializeField] private TMP_Text text;
   [SerializeField] private GameObject calibrationScreen;
@@ -17,27 +18,35 @@ public class ControllerReader : MonoBehaviour {
   public float[] minValues, maxValues;
   public float averageMin, averageMax;
   private void Start() {
-    //sets these arrays to the specified length
-    minValues = new float[dataLength];
-    maxValues = new float[dataLength];
-    if (Gamepad.current == null) {
-      text.SetText("No controller connected. Waiting...");
-      //controllerConnected is false, it'll check every frame for it to
-      //be true then start the calibration coroutine once it does
-    } else {
-      controllerConnected = true;
-      StartCoroutine(startCalibration());
-    }
-  }
-
-  void Update() {
-    //checks every frame if the controller is connected yet
-    if (controllerConnected == false) {
-      if (Gamepad.current != null) {
+    if (!debugMode) {
+      //sets these arrays to the specified length
+      minValues = new float[dataLength];
+      maxValues = new float[dataLength];
+      if(Gamepad.current == null) {
+        text.SetText("No controller connected. Waiting...");
+        //controllerConnected is false, it'll check every frame for it to
+        //be true then start the calibration coroutine once it does
+      } else {
         controllerConnected = true;
         StartCoroutine(startCalibration());
       }
+    } else {
+      AnalogueInput.setAxis(Gamepad.current.leftStick.up);
     }
+    
+  }
+
+  void Update() {
+    if (!debugMode) {
+      //checks every frame if the controller is connected yet
+      if(controllerConnected == false) {
+        if(Gamepad.current != null) {
+          controllerConnected = true;
+          StartCoroutine(startCalibration());
+        }
+      }
+    }
+    
   }
 
   IEnumerator startCalibration() {

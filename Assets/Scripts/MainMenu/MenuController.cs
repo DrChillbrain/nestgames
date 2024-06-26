@@ -21,7 +21,7 @@ public class MenuController : MonoBehaviour
         moveArrow(0);
     }
     void FixedUpdate() {
-        if (Input.GetKey("space") && squeezeControl.squeezeControl == true) {
+        if (AnalogueInput.getValue() > 0.5f && squeezeControl.squeezeControl == true) {
             if (squeezeFrames <= 0) {
                 //show squeeze timer bar
                 squeezeFrames = 1;
