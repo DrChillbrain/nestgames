@@ -15,7 +15,7 @@ public class SqueezeControl : MonoBehaviour
     void Start()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        setSqueeze(true);
+        setSqueeze(false);
     }
 
     void OnMouseDown() {
