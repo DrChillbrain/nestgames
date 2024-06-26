@@ -32,9 +32,8 @@ public class GoalAreaController : MonoBehaviour {
   void FixedUpdate()
   {
     normalizeGoal();
-    DebugScaleTest();
+    //DebugScaleTest();
     DebugPosTest();
-    Debug.Log("Mapped value: " + AnalogueInput.getValue() + ", Raw value: " + Gamepad.current.leftStick.up.value);
   }
 
   private void DebugPosTest()

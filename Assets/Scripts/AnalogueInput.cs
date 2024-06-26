@@ -3,17 +3,9 @@ using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 
 public static class AnalogueInput {
-  private static float minValue = 0.25f;
-  private static float maxValue = 0.75f;
+  public static float minValue = 0.3687786f;
+  public static float maxValue = 0.0f;
   private static AxisControl axis;
-
-  public static void setMinValue(float newMinValue) {
-    minValue = newMinValue;
-  }
-
-  public static void setMaxValue(float newMaxValue) {
-    maxValue = newMaxValue;
-  }
 
   public static float getValue() {
     return Mathf.Clamp(Map(axis.value, minValue, maxValue, 0, 1), 0, 1);
