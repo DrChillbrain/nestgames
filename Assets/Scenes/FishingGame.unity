@@ -1074,9 +1074,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eacec36718973934ba2f4658d9f28064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalAreaController: {fileID: 822880429}
+  goalArea: {fileID: 822880429}
   catchBar: {fileID: 538559264}
+  fishPrefab: {fileID: 1097203813840406968, guid: 32f73d4796ae959409904b50c22d27ff, type: 3}
   timeUntilCatch: 2
+  timeUntilCatchDifficultyAdjust: 0.1
 --- !u!212 &1171327016
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1118,8 +1120,8 @@ SpriteRenderer:
   m_SortingLayerID: -982398091
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 31ab81870b3d9114b912f55898b4233d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
