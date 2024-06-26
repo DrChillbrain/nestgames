@@ -30,7 +30,17 @@ public class GoalAreaController : MonoBehaviour {
     moveSpeed /= 100;
     difficultySpeedIncrease /= 100;
     StartCoroutine(changeDirectionCheck());
-    //StartCoroutine(debugDifficultyAdjust());
+  }
+
+  void OnEnable() {
+    goalTop.SetActive(true);
+    goalBottom.SetActive(true);
+    StartCoroutine(changeDirectionCheck());
+  }
+
+  void OnDisable() {
+    goalTop.SetActive(false);
+    goalBottom.SetActive(false);
   }
 
   // Update is called once per frame
@@ -40,15 +50,14 @@ public class GoalAreaController : MonoBehaviour {
     normalizeGoal();
   }
 
-  IEnumerator debugDifficultyAdjust() {
-    //Add checks for minimum values
+  //Increases difficulty after fish is caught
+  public void increaseDifficulty() {
     moveSpeed += difficultySpeedIncrease;
     transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y - difficultyScaleDecrease);
     timeBetweenChance -= difficultyTimeChanceDecrease;
-    yield return new WaitForSeconds(3.0f);
-    StartCoroutine(debugDifficultyAdjust());
   }
 
+  //Randomly changes direction of movement
   IEnumerator changeDirectionCheck() {
     if (Random.Range(0.0f, 1.0f) >= chanceToChangeDirection) {
       moveUp = !moveUp;
@@ -58,6 +67,7 @@ public class GoalAreaController : MonoBehaviour {
     StartCoroutine(changeDirectionCheck());
   }
 
+  //Move bar
   private void move() {
     //Adjust acceleration
     float targetAccel = (moveUp) ? 1.0f : -1.0f;

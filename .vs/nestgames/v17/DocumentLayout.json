@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\fishinggame\\fishingplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\fishinggame\\goalareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fishinggame\\goalareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\fishinggame\\fishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fishinggame\\fishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\fishinggame\\fishingplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fishinggame\\fishingplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\mainmenu\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\controllerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controllerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\fishinggame\\goalareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fishinggame\\goalareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,59 +30,46 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FishController.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FishingGame\\FishController.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FishingGame\\FishController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T09:29:53.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MenuController.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\MainMenu\\MenuController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MenuController.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\MainMenu\\MenuController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenu\\MenuController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwB4AAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T08:54:00.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ControllerConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ControllerConfig.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ControllerConfig.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ControllerConfig.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ControllerConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T14:12:17.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "FishingPlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
               "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAAC4AAAAIAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAgwDIAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T13:57:47.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "GoalAreaController.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
               "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
               "RelativeToolTip": "Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCAAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T16:19:57.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -94,8 +77,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAuwBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T09:12:22.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T09:12:22.869Z"
             }
           ]
         }
