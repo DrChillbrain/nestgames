@@ -18,4 +18,8 @@ public static class AnalogueInput {
   public static void setAxis(AxisControl ac) {
     axis = ac;
   }
+
+  public static AxisControl getAxis() {
+    return axis;
+  }
 }

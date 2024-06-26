@@ -45,19 +45,19 @@ public class ControllerReader : MonoBehaviour {
   //**SET UP FOR MIN VALUE**
 
     AnalogueInput.setAxis(Gamepad.current.leftStick.y);
-    //give them 5 seconds to get ready to hold in a neutral position
-    for (int i = 5; i > 0; i--) {
-      text.SetText("Hold your hand at a neutral position. " + i);
+    //give them 3 seconds to get ready to hold in a neutral position
+    for (int i = 3; i > 0; i--) {
+      text.SetText("Hold your hand at a neutral position: " + i);
       yield return new WaitForSeconds(1);
     }
 
     //**FIND MINIMUM VALUE**
 
-    //every 0.3 seconds, save a new value
+    //every 0.05 seconds, save a new value
     for (int valuesSaved = 0; valuesSaved < dataLength; valuesSaved++) {
-      minValues[valuesSaved] = (AnalogueInput.getValue());
-      text.SetText("Saved value " + (valuesSaved + 1) + ": " + minValues[valuesSaved]);
-      yield return new WaitForSeconds(.3f);
+      minValues[valuesSaved] = (AnalogueInput.getAxis().value);
+      text.SetText("Saved value " + (valuesSaved + 1) + "/" + dataLength);
+      yield return new WaitForSeconds(.05f);
     }
     //fine the average
     float minSum = 0.0f;
@@ -71,19 +71,19 @@ public class ControllerReader : MonoBehaviour {
 
     //**SET UP FOR MAX VALUE**
 
-    yield return new WaitForSeconds(5);
-    for (int i = 5; i > 0; i--) {
-      text.SetText("Clench your hand as much as possible. " + i);
+    yield return new WaitForSeconds(2);
+    for (int i = 3; i > 0; i--) {
+      text.SetText("Clench your hand as much as you comfortably can: " + i);
       yield return new WaitForSeconds(1);
     }
     
     //**FIND MAXIMUM VALUE**
 
-    //every 0.3 seconds, save a new value
+    //every 0.05 seconds, save a new value
     for (int valuesSaved = 0; valuesSaved < dataLength; valuesSaved++) {
-      maxValues[valuesSaved] = (AnalogueInput.getValue());
-      text.SetText("Saved value " + (valuesSaved + 1) + ": " + maxValues[valuesSaved]);
-      yield return new WaitForSeconds(.3f);
+      maxValues[valuesSaved] = (AnalogueInput.getAxis().value);
+      text.SetText("Saved value " + (valuesSaved + 1) + "/" + dataLength);
+      yield return new WaitForSeconds(.05f);
     }
     //fine the average
     float maxSum = 0.0f;
@@ -95,7 +95,7 @@ public class ControllerReader : MonoBehaviour {
     text.SetText("Average max pressure value: " + averageMax);
 
 
-    yield return new WaitForSeconds(5);
+    yield return new WaitForSeconds(2);
     AnalogueInput.minValue = averageMin;
     AnalogueInput.maxValue = averageMax;
     calibrationScreen.SetActive(false);
