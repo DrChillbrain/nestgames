@@ -9,50 +9,69 @@ public class GoalAreaController : MonoBehaviour {
   [SerializeField] private GameObject goalBottom;
 
   [Header("Goal Controller Variables")]
+  [Tooltip("In Seconds")]
   [SerializeField] private float timeBetweenChance;
+  [Tooltip("0.34 = 34%")]
   [SerializeField] private float chanceToChangeDirection;
   [SerializeField] private float moveSpeed;
+  [SerializeField] private float size;
 
-  private float debugScale = 3;
-  private int debugScaleTick;
+  [Header("Difficulty Changes")]
+  [SerializeField] private float difficultySpeedIncrease;
+  [SerializeField] private float difficultyScaleDecrease;
+  [SerializeField] private float difficultyTimeChanceDecrease;
 
-  private float moveDirection = 1;
-
-  //Range of area
-    //Buffer of 0.05 at scale 1 for scale differences
-    //Buffer of 0.05 for goal top or bottom
+  private float moveAccel;
+  private bool moveUp;
 
   // Start is called before the first frame update
   void Start()
   {
-        
+    moveSpeed /= 100;
+    difficultySpeedIncrease /= 100;
+    StartCoroutine(changeDirectionCheck());
+    //StartCoroutine(debugDifficultyAdjust());
   }
 
   // Update is called once per frame
   void FixedUpdate()
   {
+    move();
     normalizeGoal();
-    //DebugScaleTest();
-    DebugPosTest();
   }
 
-  private void DebugPosTest()
-  {
-    transform.position = new Vector2(transform.position.x, transform.position.y + (0.025f * moveDirection));
-
-    if(Mathf.Abs(transform.position.y) > (4 - transform.localScale.y) - (0.05 * (transform.localScale.y + 1))) {
-      moveDirection *= -1;
-    }
+  IEnumerator debugDifficultyAdjust() {
+    //Add checks for minimum values
+    moveSpeed += difficultySpeedIncrease;
+    transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y - difficultyScaleDecrease);
+    timeBetweenChance -= difficultyTimeChanceDecrease;
+    yield return new WaitForSeconds(3.0f);
+    StartCoroutine(debugDifficultyAdjust());
   }
 
-  private void DebugScaleTest()
-  {
-    transform.localScale = new Vector2(transform.localScale.x, debugScale);
-    debugScaleTick++;
-    if (debugScaleTick > 60) {
-      debugScaleTick = 0;
-      debugScale -= 0.1f;
+  IEnumerator changeDirectionCheck() {
+    if (Random.Range(0.0f, 1.0f) >= chanceToChangeDirection) {
+      moveUp = !moveUp;
     }
+
+    yield return new WaitForSeconds(timeBetweenChance);
+    StartCoroutine(changeDirectionCheck());
+  }
+
+  private void move() {
+    //Adjust acceleration
+    float targetAccel = (moveUp) ? 1.0f : -1.0f;
+
+    if (targetAccel * moveAccel < 1.0) {
+      moveAccel += 0.05f * targetAccel;
+    }
+
+    //Update position
+    transform.position = new Vector2(transform.position.x, transform.position.y + (moveSpeed * moveAccel));
+
+    //Clamp to edges
+    float edge = (4 - transform.localScale.y) - (0.05f * (transform.localScale.y + 1));
+    transform.position = new Vector2(transform.position.x, Mathf.Clamp(transform.position.y, -edge, edge));
   }
 
   //Makes sure that the top and bottom of the goal are properly set
