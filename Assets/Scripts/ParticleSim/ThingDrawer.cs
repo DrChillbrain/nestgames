@@ -4,55 +4,64 @@ using UnityEngine;
 
 public class ThingDrawer : MonoBehaviour
 {
-    //prefab for the circle, standin for eventual particle effects
-    public GameObject circle;
-    //while a circle is being updated, it's stored here
-    private GameObject currentCircle;
-    //a vector by which each circle's size is increased each frame while squeezing
-    //private Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
-    //coordinates of the thing that will be drawn
-    //set every time a new squeeze is detected
-    private float xCord, yCord;
-    //Maximum value on either end for the X coordinate
-    private float xMax = 7.3f;
-    //Maximum value for the Y coordinate
-    private float yMax = 3.6f;
-    //Minimum value for the Y coordinate
-    private float yMin = 0.0f;
-    //checks if the squeeze has already been started
-    private bool isSqueezing = false;
+  [Header("Controls")]
+  [SerializeField] private float xRange;
+  [SerializeField] private float yRange;
+  [SerializeField] private GameObject starParticle;
+  private GameObject currentStar;
+  [SerializeField] private float maxStarSize;
+  [SerializeField] private float maxScaleSpeed;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        isSqueezing = false;
-    }
+  [Header("Sound")]
+  [SerializeField] private AudioSource loop;
+  [SerializeField] private AudioClip loopEnd;
+  [SerializeField] private AudioSource loopFalloff;
+  private float loopVolume;
+  private float falloffVolume;
 
-    // Update is called once per frame
-    void Update()
-    {
-        //if a squeeze is being registered
-        if (AnalogueInput.getValue() > 0.5f) {
-            //if this is the first frame of the squeeze
-            if (!isSqueezing) {
-                randomizeCoordinates();
-                //creates a new circle at the coordinates
-                currentCircle = Instantiate(circle, new Vector3(xCord, yCord, 0), Quaternion.identity);
-                isSqueezing = true;
-            } else {
-                //grow the circle
-                //currentCircle.transform.localScale += scaleChange;
-            }
-        //otherwise, release, if we were squeezing
-        } else if (isSqueezing) {
-            currentCircle.GetComponent<Circle>().release(currentCircle.transform.localScale.x);
-            isSqueezing = false;
+  void FixedUpdate() {
+    if (AnalogueInput.getValue() > 0.05) {
+      if (currentStar == null) {
+        currentStar = Instantiate(starParticle, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+      }
+      if (currentStar.transform.localScale.x < maxStarSize) {
+        currentStar.transform.localScale = new Vector2(currentStar.transform.localScale.x + maxScaleSpeed * AnalogueInput.getValue(),
+                                                       currentStar.transform.localScale.y + maxScaleSpeed * AnalogueInput.getValue());
+      } else {
+        transform.localScale = Vector2.Lerp(transform.localScale, new Vector2(2.4f, 2.4f), maxScaleSpeed);
+      }
+
+      if (loopVolume < 0.5) {
+        loopVolume += 0.10f * AnalogueInput.getValue();
+        loop.volume = loopVolume;
+      }
+      
+    } else {
+      if (currentStar != null) {
+        if (loopVolume > 0.1f) {
+          loopFalloff.Play();
+          falloffVolume = loopVolume;
         }
+        loop.volume = 0;
+        loopVolume = 0;
+        //AudioSource.PlayClipAtPoint(loopEnd, new Vector3(0, 0, 0), loopVolume);
+        ParticleSystem ps = currentStar.GetComponent<ParticleSystem>();
+        ps.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+        StartCoroutine(destroyStar(currentStar));
+        currentStar = null;
+      }
     }
 
-    //Sets xCord and yCord to new random values within the view
-    void randomizeCoordinates() {
-        xCord = Random.Range((0f - xMax), xMax);
-        yCord = Random.Range(yMin, yMax);
+    if(falloffVolume > 0) {
+      falloffVolume -= 0.01f;
+      loopFalloff.volume = falloffVolume;
+    } else {
+      loopFalloff.Stop();
     }
+  }
+
+  IEnumerator destroyStar(GameObject star) {
+    yield return new WaitForSeconds(3.0f);
+    Destroy(star);
+  }
 }
