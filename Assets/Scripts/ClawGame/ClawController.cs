@@ -38,6 +38,10 @@ public class ClawController : MonoBehaviour
     private int dropSequence = -1;
     int side;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource metalStart;
+    [SerializeField] private AudioClip metalEnd;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -98,6 +102,10 @@ public class ClawController : MonoBehaviour
                     break;
 
                 case 1: //Start drop
+                    if(!metalStart.isPlaying) {
+                        metalStart.Play();
+                    }
+
                     if (startMovement(false, ref verticalAccel, ref verticalAccelIncrement))
                         dropSequence++;
                     break;
@@ -109,12 +117,15 @@ public class ClawController : MonoBehaviour
                     {
                         dropSequence++;
                         side = -1;
+                        metalStart.Stop();
+                        AudioSource.PlayClipAtPoint(metalEnd, new Vector3(0, 0, -10));
                     }
                     break;
 
                 case 3: //Stop drop
                     if (stopMovement(false, ref verticalAccel, ref verticalAccelIncrement))
                     {
+                        
                         dropSequence = -1;
                         StartCoroutine(Defs.delay(0.2f, () => {
                             dropSequence = 4;
@@ -133,6 +144,9 @@ public class ClawController : MonoBehaviour
                     break;
 
                 case 5: //Raise claw
+                    if (!metalStart.isPlaying) {
+            metalStart.Play();
+          }
                     if (startMovement(false, ref verticalAccel, ref verticalAccelIncrement))
                         dropSequence++;
                     break;
@@ -143,12 +157,15 @@ public class ClawController : MonoBehaviour
                     if (transform.position.y >= topBound) {
                         dropSequence++;
                         side = 1;
-                    }
+            metalStart.Stop();
+            AudioSource.PlayClipAtPoint(metalEnd, new Vector3(0, 0, -10));
+          }
                     break;
 
                 case 7: //Stop claw
                     if (stopMovement(false, ref verticalAccel, ref verticalAccelIncrement))
                     {
+            
                         dropSequence = -1;
                         prizeDetector.checkForPrizes();
                     }

@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour
     [SerializeField] private Vector3 craneGamePosition;
     [SerializeField] private Vector3 goneFishinPosition;
     [SerializeField] private int frameThreshold;
+  [SerializeField] private AudioClip menuTick;
     //tracks the number of frames it's been since a squeeze started
     public int squeezeFrames = 0;
     //current selected game
@@ -55,6 +56,7 @@ public class MenuController : MonoBehaviour
 
     public void moveArrow(int id) {
         selectedGame = id;
+    AudioSource.PlayClipAtPoint(menuTick, new Vector3(0, 0, -10));
         switch(selectedGame) 
         {
         //squeeze color

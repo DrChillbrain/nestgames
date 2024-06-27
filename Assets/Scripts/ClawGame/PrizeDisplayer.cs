@@ -34,6 +34,9 @@ public class PrizeDisplayer : MonoBehaviour
     private GameObject currentCapsule = null;
     private GameObject currentPrize = null;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip glitter;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -208,6 +211,7 @@ public class PrizeDisplayer : MonoBehaviour
         prizeStartLocation = prize.transform.position;
         currentCapsule = prize;
         displaySequence = 0;
+        AudioSource.PlayClipAtPoint(glitter, new Vector3(0, 0, 0));
 
         //Create prize object
         for (int i = 0; i < capsuleSprites.Length; i++)

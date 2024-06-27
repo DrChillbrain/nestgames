@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\particlesim\\thingdrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\particlesim\\thingdrawer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\mainmenu\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\fishinggame\\fishingplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fishinggame\\fishingplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\clawgame\\clawcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\clawcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\fishinggame\\goalareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fishinggame\\goalareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\clawgame\\prizedisplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\prizedisplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\analogueinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\analogueinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\fishinggame\\fishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fishinggame\\fishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|c:\\users\\ash\\desktop\\london di\\nestgames\\assets\\scripts\\clawgame\\prizedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\clawgame\\prizedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1BFFA4F-39E4-DA52-77D8-DEBE8F4AC89F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ParticleSim\\Circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ParticleSim\\Circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,84 +30,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Circle.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ParticleSim\\Circle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ParticleSim\\Circle.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ParticleSim\\Circle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ParticleSim\\Circle.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAIA6wDEAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T09:01:12.372Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ThingDrawer.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ParticleSim\\ThingDrawer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ParticleSim\\ThingDrawer.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ParticleSim\\ThingDrawer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ParticleSim\\ThingDrawer.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAuwA4AAAATAAAA",
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenu\\MenuController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAuwDoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T09:00:02.221Z",
+              "WhenOpened": "2024-06-27T11:05:16.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AnalogueInput.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\AnalogueInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AnalogueInput.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\AnalogueInput.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AnalogueInput.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Title": "PrizeDetector.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\PrizeDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\PrizeDetector.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\PrizeDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ClawGame\\PrizeDetector.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T10:38:27.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FishController.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FishingGame\\FishController.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FishingGame\\FishController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T09:29:53.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FishingPlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FishingGame\\FishingPlayerController.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAuwE0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T13:57:47.464Z"
+              "WhenOpened": "2024-06-27T10:49:24.338Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GoalAreaController.cs",
-              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
-              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FishingGame\\GoalAreaController.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAkwEMAAAAmAAAA",
+              "Title": "PrizeDisplayer.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\PrizeDisplayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\PrizeDisplayer.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\PrizeDisplayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ClawGame\\PrizeDisplayer.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAYwGMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T16:19:57.321Z"
+              "WhenOpened": "2024-06-27T10:46:54.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "ClawController.cs",
+              "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\ClawController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ClawGame\\ClawController.cs",
+              "ToolTip": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\ClawGame\\ClawController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ClawGame\\ClawController.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAYwKAAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T10:46:13.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Ash\\Desktop\\London DI\\nestgames\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
