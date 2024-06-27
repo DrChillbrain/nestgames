@@ -9,7 +9,7 @@ public class ThingDrawer : MonoBehaviour
     //while a circle is being updated, it's stored here
     private GameObject currentCircle;
     //a vector by which each circle's size is increased each frame while squeezing
-    private Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
+    //private Vector3 scaleChange = new Vector3(0.01f, 0.01f, 0.01f);
     //coordinates of the thing that will be drawn
     //set every time a new squeeze is detected
     private float xCord, yCord;
@@ -41,7 +41,7 @@ public class ThingDrawer : MonoBehaviour
                 isSqueezing = true;
             } else {
                 //grow the circle
-                currentCircle.transform.localScale += scaleChange;
+                //currentCircle.transform.localScale += scaleChange;
             }
         //otherwise, release, if we were squeezing
         } else if (isSqueezing) {
