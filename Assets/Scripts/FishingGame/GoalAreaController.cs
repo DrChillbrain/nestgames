@@ -21,6 +21,11 @@ public class GoalAreaController : MonoBehaviour {
   [SerializeField] private float difficultyScaleDecrease;
   [SerializeField] private float difficultyTimeChanceDecrease;
 
+  [Header("MaxDifficulty")]
+  [SerializeField] private float maxSpeed;
+  [SerializeField] private float minSize;
+  [SerializeField] private float minTimeChance;
+
   private float moveAccel;
   private bool moveUp;
 
@@ -53,8 +58,10 @@ public class GoalAreaController : MonoBehaviour {
   //Increases difficulty after fish is caught
   public void increaseDifficulty() {
     moveSpeed += difficultySpeedIncrease;
-    transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y - difficultyScaleDecrease);
+    moveSpeed = Mathf.Min(moveSpeed, maxSpeed);
+    transform.localScale = new Vector2(transform.localScale.x, Mathf.Max(transform.localScale.y - difficultyScaleDecrease, minSize));
     timeBetweenChance -= difficultyTimeChanceDecrease;
+    timeBetweenChance = Mathf.Max(timeBetweenChance, minTimeChance);
   }
 
   //Randomly changes direction of movement
