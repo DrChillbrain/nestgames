@@ -12,12 +12,6 @@ public class SqueezeControl : MonoBehaviour
     //this object's sprite renderer
     private SpriteRenderer mySpriteRenderer;
 
-    void Start()
-    {
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
-        setSqueeze(false);
-    }
-
     void OnMouseDown() {
         if (squeezeControl == false) {
             setSqueeze(true);
@@ -26,7 +20,8 @@ public class SqueezeControl : MonoBehaviour
         }
     }
 
-    void setSqueeze(bool target) {
+    public void setSqueeze(bool target) {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
         if (target == true) {
             squeezeControl = true;
             mySpriteRenderer.sprite = options[0];

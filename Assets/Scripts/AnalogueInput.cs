@@ -5,6 +5,7 @@ using UnityEngine.InputSystem.Controls;
 public static class AnalogueInput {
   public static float minValue = 0.3687786f;
   public static float maxValue = 0.0f;
+  public static bool isCalibrated = false;
   private static AxisControl axis;
 
   public static float getValue() {
